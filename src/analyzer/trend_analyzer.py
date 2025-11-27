@@ -378,9 +378,15 @@ class TrendAnalyzer:
             paper_count=len(papers)
         )
         
+        # 获取配置的 max_tokens
+        provider = self.config.get('llm', {}).get('provider', 'openai')
+        provider_config = self.config.get('llm', {}).get(provider, {})
+        # 默认增加到 8000，或者使用配置中的值
+        max_tokens = provider_config.get('max_tokens', 8000)
+        
         try:
-            self.logger.info("正在使用 LLM 生成分析报告...")
-            response = self.llm_client.generate(prompt, max_tokens=3000)
+            self.logger.info(f"正在使用 LLM 生成分析报告 (max_tokens={max_tokens})...")
+            response = self.llm_client.generate(prompt, max_tokens=max_tokens)
             
             # 解析 LLM 响应
             analysis = self._parse_llm_response(response)
@@ -397,7 +403,7 @@ class TrendAnalyzer:
                 'future_directions': f'生成失败: {str(e)}',
                 'research_ideas': f'生成失败: {str(e)}'
             }
-    
+
     def _build_analysis_prompt(self, papers_summary: str, keywords: str, 
                               topics: str, paper_count: int) -> str:
         """构建 LLM 分析提示词
@@ -479,24 +485,28 @@ class TrendAnalyzer:
         current_content = []
         
         for line in response.split('\n'):
-            line_lower = line.lower().strip()
+            line_stripped = line.strip()
+            line_lower = line_stripped.lower()
             
-            if '研究热点' in line or 'hotspot' in line_lower:
+            # 检查是否为标题行 (以 # 开头)
+            is_header = line_stripped.startswith('#')
+            
+            if is_header and ('研究热点' in line or 'hotspot' in line_lower):
                 if current_section and current_content:
                     sections[current_section] = '\n'.join(current_content).strip()
                 current_section = 'hotspots'
                 current_content = [line]
-            elif '趋势' in line or 'trend' in line_lower:
+            elif is_header and ('趋势' in line or 'trend' in line_lower):
                 if current_section and current_content:
                     sections[current_section] = '\n'.join(current_content).strip()
                 current_section = 'trends'
                 current_content = [line]
-            elif '未来' in line or 'future' in line_lower or '发展方向' in line:
+            elif is_header and ('未来' in line or 'future' in line_lower or '发展方向' in line):
                 if current_section and current_content:
                     sections[current_section] = '\n'.join(current_content).strip()
                 current_section = 'future_directions'
                 current_content = [line]
-            elif '创新' in line or 'idea' in line_lower or '想法' in line:
+            elif is_header and ('创新' in line or 'idea' in line_lower or '想法' in line):
                 if current_section and current_content:
                     sections[current_section] = '\n'.join(current_content).strip()
                 current_section = 'research_ideas'

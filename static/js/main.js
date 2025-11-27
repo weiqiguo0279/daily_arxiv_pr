@@ -353,7 +353,7 @@ function renderPapers(papers) {
             <div class="paper-header">
                 <div>
                     <h3 class="paper-title">
-                        <a href="${paper.url}" target="_blank">${escapeHtml(paper.title)}</a>
+                        <a href="${paper.entry_url}" target="_blank">${escapeHtml(paper.title)}</a>
                     </h3>
                     <div class="paper-meta">
                         <span class="paper-meta-item">
@@ -378,11 +378,11 @@ function renderPapers(papers) {
                 ).join('')}
             </div>
             <div class="paper-actions">
-                <a href="${paper.pdf_url || paper.url}" target="_blank" class="btn-paper btn-primary">
+                <a href="${paper.pdf_url || paper.entry_url}" target="_blank" class="btn-paper btn-primary">
                     <i class="fas fa-file-pdf"></i>
                     查看PDF
                 </a>
-                <a href="${paper.url}" target="_blank" class="btn-paper btn-secondary">
+                <a href="${paper.entry_url}" target="_blank" class="btn-paper btn-secondary">
                     <i class="fas fa-external-link-alt"></i>
                     arXiv
                 </a>
@@ -402,13 +402,13 @@ function renderFeaturedPapers(papers) {
     container.innerHTML = papers.map(paper => `
         <div class="paper-card fade-in">
             <h4 class="paper-title">
-                <a href="${paper.url}" target="_blank">${escapeHtml(paper.title)}</a>
+                <a href="${paper.entry_url}" target="_blank">${escapeHtml(paper.title)}</a>
             </h4>
             <p class="paper-abstract" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                 ${escapeHtml(paper.abstract || '')}
             </p>
             <div class="paper-actions" style="margin-top: 0.75rem;">
-                <a href="${paper.url}" target="_blank" class="btn-paper btn-primary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">
+                <a href="${paper.entry_url}" target="_blank" class="btn-paper btn-primary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">
                     <i class="fas fa-arrow-right"></i>
                     查看详情
                 </a>

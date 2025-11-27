@@ -284,13 +284,13 @@ daily-arxiv/
 
 ```bash
 # 测试论文爬取功能
-python test_fetcher.py
+python test/test_fetcher.py
 
 # 测试论文总结功能
-python test_summarizer.py
+python test/test_summarizer.py
 
 # 测试趋势分析功能
-python test_analyzer.py
+python test/test_analyzer.py
 
 # 运行完整流程
 python main.py

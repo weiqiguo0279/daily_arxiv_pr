@@ -148,19 +148,19 @@ scheduler:
 
 ```bash
 # Test paper fetching
-python test_fetcher.py
+python test/test_fetcher.py
 
 # Test LLM summarization
-python test_summarizer.py
+python test/test_summarizer.py
 
 # Test trend analysis
-python test_analyzer.py
+python test/test_analyzer.py
 
 # Test web service
-python test_web.py
+python test/test_web.py
 
 # Test scheduler
-python test_scheduler.py
+python test/test_scheduler.py
 ```
 
 ### 7. Execute the full workflow
@@ -285,13 +285,13 @@ Supported providers:
 
 ```bash
 # Test paper crawler
-python test_fetcher.py
+python test/test_fetcher.py
 
 # Test summarizer
-python test_summarizer.py
+python test/test_summarizer.py
 
 # Test trend analyzer
-python test_analyzer.py
+python test/test_analyzer.py
 
 # Run full pipeline
 python main.py

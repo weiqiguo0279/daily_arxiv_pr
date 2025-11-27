@@ -116,7 +116,7 @@ def main():
     # 获取配置
     run_time = scheduler_config.get('run_time', '09:00')
     timezone = scheduler_config.get('timezone', 'Asia/Shanghai')
-    run_on_start = scheduler_config.get('run_on_start', False)
+    run_on_start = scheduler_config.get('run_on_start', True)
     
     # 解析运行时间
     try:
