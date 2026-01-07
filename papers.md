@@ -1,33 +1,5 @@
 # 🚗 Autonomous Driving VLM/VLA Papers
 
-- [Heavy Black-Holes Also Matter in Standard Siren Cosmology](https://arxiv.org/abs/2601.03257)
-  - Grégoire Pierra, Alexander Papadopoulos
-  - Publisher: LIGO-Virgo-KAGRA (LVK) collaboration
-  - Publish Date: 2026.01.06
-  - Task: Reasoning
-  - Datasets: [GWTC-4.0](https://www.gw-openscience.org/eventapi/html/GWTC/)
-  - Summary：
-    - Investigates the impact of a novel parametric model for the full population mass spectrum of compact binary coalescences (CBCs) on Hubble constant estimation, testing the role of heavy black holes.
-    - Performs joint inference using 142 CBCs from GWTC-4.0 with spectral and dark siren methods, reporting improved constraints: $H_0 = 78.8^{+19.0}_{-15.3}$ (spectral) and $H_0 = 82.5^{+16.8}_{-14.3}$ (dark) km s⁻¹ Mpc⁻¹.
-    - Shows the improvement is linked to a new mass scale in the binary black hole spectrum at ~63.3 $M_{\odot}$, highlighting the importance of heavy-mass features for standard-siren cosmology.
-
-- [Standard Model Higgs Peaks: a Note on the Vacuum Instability during Inflation](https://arxiv.org/abs/2601.03231)
-  - G. Franciolini, A. Kehagias, A. Riotto
-  - Publisher: University of Geneva, National Technical University of Athens
-  - Publish Date: 2026.01.06
-  - Task: Reasoning
-  - Summary：
-    - Proposes using extreme-value statistics of Higgs field peaks during inflation as the correct framework to assess vacuum instability, offering a qualitatively distinct bound.
-    - Finds the resulting bound on the Hubble rate during inflation is a factor of sqrt(2) stronger than commonly adopted bounds in the literature.
-
-- [Automated Semantic Rules Detection (ASRD) for Emergent Communication Interpretation](https://arxiv.org/abs/2601.03254)
-  - Bastien Vanderplaetse, Xavier Siebert, Stéphane Dupont
-  - Publish Date: 2026.01.06
-  - Task: Reasoning
-  - Summary：
-    - Proposes an Automated Semantic Rules Detection (ASRD) algorithm to extract patterns in messages exchanged by agents in the Lewis Game, aiding the interpretation of emergent languages.
-    - ASRD relates extracted communication patterns to specific attributes of the input data, simplifying the analysis of independently developed agent communication strategies.
-
 - [Muses: Designing, Composing, Generating Nonexistent Fantasy 3D Creatures without Training](https://arxiv.org/abs/2601.03256)
   - Hexiao Lu, Xiaokun Sun, Zeyu Cai, Hao Guo, Ying Tai, Jian Yang, Zhenyu Zhang
   - Publisher: Nanjing University of Science and Technology
@@ -35,30 +7,11 @@
   - Project Page: [Muses](https://luhexiao.github.io/Muses.github.io/)
   - Task: Generation
   - Summary：
-    - Muses, a training-free method for fantastic 3D creature generation, leveraging a 3D skeleton to explicitly compose diverse elements in a structure-aware pipeline.
-    - The method constructs a creatively composed 3D skeleton via graph-constrained reasoning, guides voxel-based assembly in a structured latent space, and applies image-guided appearance modeling for style-consistent textures.
-
-- [Automated Semantic Rules Detection (ASRD) for Emergent Communication Interpretation](https://arxiv.org/abs/2601.03254)
-  - Bastien Vanderplaetse, Xavier Siebert, Stéphane Dupont
-  - Publish Date: 2026.01.06
-  - Task: Reasoning
-  - Summary：
-    - Proposes an Automated Semantic Rules Detection (ASRD) algorithm to extract patterns in messages from agents trained on the Lewis Game, aiding the interpretation of emergent languages.
-    - Focuses on improving the interpretability of communication strategies developed autonomously by multi-agent systems, linking message patterns to specific input data attributes.
-
-- [Heavy Black-Holes Also Matter in Standard Siren Cosmology](https://arxiv.org/abs/2601.03257)
-  - Grégoire Pierra, Alexander Papadopoulos
-  - Publisher: LIGO-Virgo-KAGRA (LVK) collaboration
-  - Publish Date: 2026.01.06
-  - Task: Prediction
-  - Datasets: [GWTC-4.0](https://www.gw-openscience.org/eventapi/html/GWTC/)
-  - Summary：
-    - Investigates the impact of a novel parametric model for the full population mass spectrum of compact binary coalescences (CBCs) on Hubble constant estimation, focusing on heavy black holes.
-    - Performs joint inference using 142 CBCs from GWTC-4.0 with spectral and dark siren methods, reporting improved constraints: $H_0 = 78.8^{+19.0}_{-15.3}$ km/s/Mpc (spectral) and $H_0 = 82.5^{+16.8}_{-14.3}$ km/s/Mpc (dark sirens).
-    - Shows the improvement is linked to a new mass scale in the binary black hole spectrum at ~63.3 $M_{\odot}$, highlighting the importance of heavy-mass features for standard-siren cosmology.
+    - Muses, a training-free method for fantastic 3D creature generation, leveraging a 3D skeleton to explicitly compose diverse elements in a feed-forward paradigm.
+    - The method formalizes creation as a structure-aware pipeline: graph-constrained skeleton design, voxel-based assembly in a structured latent space, and image-guided appearance modeling.
 
 
 ---
 
-*Last updated: 2026-01-08 01:52:43 UTC*
+*Last updated: 2026-01-08 02:02:01 UTC*
 *Auto-generated by ArxivVLMCrawler*
