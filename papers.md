@@ -82,6 +82,47 @@
   - Publish Date: 2026.01.06
   - Task: Perception
   - Summary：
+    - Muses, a training-free method for fantastic 3D creature generation via a feed-forward, structure-aware pipeline of design, composition, and generation.
+    - It leverages a 3D skeleton for explicit composition, using graph-constrained reasoning for skeleton creation, voxel-based assembly in a structured latent space, and image-guided appearance modeling for texture.
+
+- [InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields](https://arxiv.org/abs/2601.03252)
+  - Hao Yu, Haotong Lin, Jiawei Wang, Jiaxin Li, Yida Wang, Xueyang Zhang, Yue Wang, Xiaowei Zhou, Ruizhen Hu, Sida Peng
+  - Publish Date: 2026.01.06
+  - Task: Perception
+  - Summary：
+    - InfiniDepth, a method representing depth as neural implicit fields via a local implicit decoder, enabling arbitrary-resolution and fine-grained depth estimation by querying depth at continuous 2D coordinates.
+    - Introduces a high-quality 4K synthetic benchmark curated from five different games to assess the method's capabilities on diverse scenes with rich geometric details.
+    - Achieves state-of-the-art performance on synthetic and real-world benchmarks for relative and metric depth estimation, excelling in fine-detail regions and benefiting novel view synthesis under large viewpoint shifts.
+
+- [InfiAgent: An Infinite-Horizon Framework for General-Purpose Autonomous Agents](https://arxiv.org/abs/2601.03204)
+  - Chenglin Yu, Yuchen Wang, Songmiao Wang, Hongxia Yang, Ming Li
+  - Publish Date: 2026.01.06
+  - Code: [InfiAgent](https://github.com/ChenglinPoly/infiAgent)
+  - Task: Reasoning
+  - Summary：
+    - InfiAgent, a general-purpose framework for long-horizon tasks that keeps the agent's reasoning context strictly bounded by externalizing persistent state into a file-centric state abstraction.
+    - The framework reconstructs context at each step from a workspace state snapshot and a fixed window of recent actions, avoiding unbounded context growth and accumulated errors.
+    - Experiments on tasks like DeepResearch and an 80-paper literature review show InfiAgent with a 20B model is competitive with larger proprietary systems and maintains higher long-horizon coverage than context-centric baselines.
+
+- [A Versatile Multimodal Agent for Multimedia Content Generation](https://arxiv.org/abs/2601.03250)
+  - Daoan Zhang, Wenlin Yao, Xiaoyang Wang, Yebowen Hu, Jiebo Luo, Dong Yu
+  - Publish Date: 2026.01.06
+  - Task: End-to-End
+  - Summary：
+    - Proposes a MultiMedia-Agent designed to automate complex content creation, featuring a data generation pipeline, a tool library, and evaluation metrics for preference alignment.
+    - Introduces skill acquisition theory for data curation and agent training, with a two-stage correlation strategy for plan optimization and a three-stage training approach.
+
+- [Multi-RADS Synthetic Radiology Report Dataset and Head-to-Head Benchmarking of 41 Open-Weight and Proprietary Language Models](https://arxiv.org/abs/2601.03232)
+  - Kartik Bose, Abhinandan Kumar, Raghuraman Soundararajan, Priya Mudgil, Samonee Ralmilay, Niharika Dutta, Manphool Singhal, Arun Kumar, Saugata Sen, Anurima Patra, Priya Ghosh, Abanti Das, Amit Gupta, Ashish Verma, Dipin Sudhakaran, Ekta Dhamija, Himangi Unde, Ishan Kumar, Krithika Rangarajan, Prerna Garg, Rachel Sequeira, Sudhin Shylendran, Taruna Yadav, Tej Pal, Pankaj Gupta
+  - Publish Date: 2026.01.06
+  - Summary：
+    - Introduces RXL-RADSet, a radiologist-verified synthetic benchmark containing 1,600 reports across 10 different Reporting and Data Systems (RADS) for standardized radiology risk communication.
+    - Benchmarks 41 open-weight small language models (SLMs) against GPT-5.2, finding that large SLMs (20-32B parameters) can approach proprietary-model performance under guided prompting, with performance scaling with model size and declining with RADS complexity.
+
+
+---
+
+*Last updated: 2026-01-08 02:04:47 UTC*
     - Investigates how environmental factors, traffic factors, and pedestrian characteristics influence interaction safety between autonomous vehicles and pedestrians in port environments using VR simulations.
     - Finds that low visibility, occlusions, and larger vehicle sizes increase perceived risk and crossing caution, while time pressure undermines compensatory behaviors and increases risk.
     - Proposes safety strategies including multi-viewpoint cameras, vehicle-infrastructure communication, enhanced lighting/signage, and pedestrian training to improve vision-based autonomous system deployment in ports.
