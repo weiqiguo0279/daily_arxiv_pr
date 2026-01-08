@@ -1,5 +1,9 @@
 # 🚗 Autonomous Driving VLM/VLA Papers
 
+
+---
+
+*Last updated: 2026-01-08 02:01:00 UTC*
 - [Heavy Black-Holes Also Matter in Standard Siren Cosmology](https://arxiv.org/abs/2601.03257)
   - Grégoire Pierra, Alexander Papadopoulos
   - Publisher: LIGO-Virgo-KAGRA (LVK) Collaboration
