@@ -1,10 +1,86 @@
 # 🚗 Autonomous Driving VLM/VLA Papers
 
+- [Heavy Black-Holes Also Matter in Standard Siren Cosmology](https://arxiv.org/abs/2601.03257)
+  - Grégoire Pierra, Alexander Papadopoulos
+  - Publisher: LIGO-Virgo-KAGRA (LVK) Collaboration
+  - Publish Date: 2026.01.06
+  - Task: Reasoning
+  - Datasets: [GWTC-4.0](https://www.gw-openscience.org/eventapi/html/GWTC/)
+  - Summary：
+    - Investigates the impact of a novel parametric model for the full population mass spectrum of compact binary coalescences (CBCs) on Hubble constant estimation, focusing on heavy black holes.
+    - Performs joint inference using 142 CBCs from GWTC-4.0 with spectral and dark siren methods, reporting improved constraints: $H_0 = 78.8^{+19.0}_{-15.3}$ km/s/Mpc (spectral) and $H_0 = 82.5^{+16.8}_{-14.3}$ km/s/Mpc (dark sirens).
+    - Attributes the ~30-36% uncertainty improvement to a new mass scale in the binary black hole spectrum at ~63.3 $M_{\odot}$, highlighting the importance of heavy-mass features for cosmology.
+
+- [Standard Model Higgs Peaks: a Note on the Vacuum Instability during Inflation](https://arxiv.org/abs/2601.03231)
+  - G. Franciolini, A. Kehagias, A. Riotto
+  - Publisher: University of Geneva, National Technical University of Athens
+  - Publish Date: 2026.01.06
+  - Task: Reasoning
+  - Summary：
+    - Proposes using extreme-value statistics of Higgs field peaks during inflation as the correct framework to assess vacuum instability, offering a qualitatively distinct bound.
+    - Derives a bound on the Hubble rate during inflation that is a factor of sqrt(2) stronger than commonly adopted bounds to avoid catastrophic vacuum decay.
+
+- [Automated Semantic Rules Detection (ASRD) for Emergent Communication Interpretation](https://arxiv.org/abs/2601.03254)
+  - Bastien Vanderplaetse, Xavier Siebert, Stéphane Dupont
+  - Publish Date: 2026.01.06
+  - Task: Reasoning
+  - Summary：
+    - Proposes an Automated Semantic Rules Detection (ASRD) algorithm to extract patterns in messages from agents trained on the Lewis Game for emergent communication.
+    - Aims to improve the interpretability of emergent languages by relating extracted message patterns to specific attributes of the input data.
+
 - [Muses: Designing, Composing, Generating Nonexistent Fantasy 3D Creatures without Training](https://arxiv.org/abs/2601.03256)
   - Hexiao Lu, Xiaokun Sun, Zeyu Cai, Hao Guo, Ying Tai, Jian Yang, Zhenyu Zhang
+  - Publisher: Nanjing University of Science and Technology
+- [Automated Semantic Rules Detection (ASRD) for Emergent Communication Interpretation](https://arxiv.org/abs/2601.03254)
+  - Bastien Vanderplaetse, Xavier Siebert, Stéphane Dupont
   - Publish Date: 2026.01.06
-  - Project Page: [Muses](https://luhexiao.github.io/Muses.github.io/)
-  - Task: Generation
+  - Task: Reasoning
+  - Summary：
+    - Muses, a training-free method for fantastic 3D creature generation using a feed-forward, structure-aware pipeline based on 3D skeletons.
+    - The method formalizes creation into design, composition, and generation stages: graph-constrained skeleton construction, voxel-based assembly in latent space, and skeletal-conditioned texture modeling.
+    - It achieves state-of-the-art performance in visual fidelity and text alignment, enabling flexible 3D object editing without domain limitations.
+    - Proposes an Automated Semantic Rules Detection (ASRD) algorithm to extract relevant patterns in messages exchanged by agents in the Lewis Game.
+    - ASRD aids the interpretation of emergent communication by relating extracted message patterns to specific attributes of the input data, simplifying analysis.
+
+- [ReCCur: A Recursive Corner-Case Curation Framework for Robust Vision-Language Understanding in Open and Edge Scenarios](https://arxiv.org/abs/2601.03011)
+  - Yihan Wei, Shenghai Yuan, Tianchen Deng, Boyang Lou, Enwen Hu
+  - Publish Date: 2026.01.06
+  - Code: [ReCCur](https://github.com/) (Inferred placeholder)
+  - Task: Perception
+  - Summary：
+    - ReCCur, a low-compute framework for converting noisy web imagery into auditable fine-grained labels via a multi-agent recursive pipeline to address corner cases.
+    - The framework uses a three-stage process: large-scale data acquisition and filtering, mixture-of-experts knowledge distillation, and region-evidence VLM adversarial labeling.
+    - Designed to run on consumer-grade GPUs with minimal human supervision, it steadily improves label purity and separability for downstream training and evaluation under resource constraints.
+
+- [Automated Semantic Rules Detection (ASRD) for Emergent Communication Interpretation](https://arxiv.org/abs/2601.03254)
+  - Bastien Vanderplaetse, Xavier Siebert, Stéphane Dupont
+  - Publish Date: 2026.01.06
+  - Task: Reasoning
+  - Summary：
+    - Proposes an Automated Semantic Rules Detection (ASRD) algorithm to extract patterns in messages exchanged by agents in the Lewis Game, aiding the interpretation of emergent languages.
+    - Focuses on the interpretability of emergent communication in multi-agent systems, relating extracted message patterns to specific attributes of the input data to simplify analysis.
+
+- [Heavy Black-Holes Also Matter in Standard Siren Cosmology](https://arxiv.org/abs/2601.03257)
+  - Grégoire Pierra, Alexander Papadopoulos
+  - Publisher: LIGO-Virgo-KAGRA (LVK) collaboration
+  - Publish Date: 2026.01.06
+  - Task: Reasoning
+  - Datasets: [GWTC-4.0](https://www.gw-openscience.org/eventapi/html/GWTC/)
+  - Summary：
+    - Investigates the impact of a novel parametric model for the full population mass spectrum of compact binary coalescences (CBCs) on Hubble constant estimation, focusing on heavy black holes.
+    - Performs joint inference using 142 CBCs from GWTC-4.0 with spectral and dark siren methods, reporting improved constraints: $H_0 = 78.8^{+19.0}_{-15.3}$ (spectral) and $H_0 = 82.5^{+16.8}_{-14.3}$ (dark sirens) km s⁻¹ Mpc⁻¹.
+    - Attributes the ~30-36% uncertainty improvement to a new mass scale in the binary black hole spectrum at ~63.3 M⊙, highlighting the importance of heavy-mass features for cosmology.
+
+
+---
+
+*Last updated: 2026-01-08 02:07:06 UTC*
+    - Focuses on improving the interpretability of communication strategies developed autonomously by multi-agent systems without explicit programming.
+
+- [Enhancing Safety in Automated Ports: A Virtual Reality Study of Pedestrian-Autonomous Vehicle Interactions under Time Pressure, Visual Constraints, and Varying Vehicle Size](https://arxiv.org/abs/2601.03218)
+  - Yuan Che, Mun On Wong, Xiaowei Gao, Haoyang Liang, Yun Ye
+  - Publish Date: 2026.01.06
+  - Task: Perception
   - Summary：
     - Muses, a training-free method for fantastic 3D creature generation via a feed-forward, structure-aware pipeline of design, composition, and generation.
     - It leverages a 3D skeleton for explicit composition, using graph-constrained reasoning for skeleton creation, voxel-based assembly in a structured latent space, and image-guided appearance modeling for texture.
@@ -47,4 +123,12 @@
 ---
 
 *Last updated: 2026-01-08 02:04:47 UTC*
+    - Investigates how environmental factors, traffic factors, and pedestrian characteristics influence interaction safety between autonomous vehicles and pedestrians in port environments using VR simulations.
+    - Finds that low visibility, occlusions, and larger vehicle sizes increase perceived risk and crossing caution, while time pressure undermines compensatory behaviors and increases risk.
+    - Proposes safety strategies including multi-viewpoint cameras, vehicle-infrastructure communication, enhanced lighting/signage, and pedestrian training to improve vision-based autonomous system deployment in ports.
+
+
+---
+
+*Last updated: 2026-01-08 02:13:41 UTC*
 *Auto-generated by ArxivVLMCrawler*
