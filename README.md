@@ -1,1 +1,60 @@
+# 📚 每日 arXiv 论文总结(LLM4AD/VLM4AD/VLA4AD)
+
+**日期**: 2026-01-10
+**论文数量**: 4 篇
+**LLM**: DeepSeek (deepseek-chat)
+
+---
+
+
+- [ThinkDrive: Chain-of-Thought Guided Progressive Reinforcement Learning Fine-Tuning for Autonomous Driving](https://arxiv.org/abs/2601.04714)
+  - Chang Zhao, Zheming Yang, Yunqing Hu, Qi Guo, Zijian Wang, Pengcheng Li, Wen Ji
+  - Publish Date: 2026.01.08
+  - Task: Planning
+  - Summary：
+    - ThinkDrive, a Chain-of-Thought (CoT) guided progressive reinforcement learning fine-tuning framework for autonomous driving that synergizes explicit reasoning with difficulty-aware adaptive policy optimization.
+    - The method employs a two-stage training strategy: first performing supervised fine-tuning (SFT) using CoT explanations, then applying progressive RL with a difficulty-aware adaptive policy optimizer.
+
+---
+
+
+- [UniDrive-WM: Unified Understanding, Planning and Generation World Model For Autonomous Driving](https://arxiv.org/abs/2601.04453)
+  - Zhexiao Xiong, Xin Ye, Burhan Yaman, Sheng Cheng, Yiren Lu, Jingru Luo, Nathan Jacobs, Liu Ren
+  - Publish Date: 2026.01.07
+  - Project Page: [UniDrive-WM](https://unidrive-wm.github.io/UniDrive-WM)
+  - Task: Planning
+  - Datasets: [Bench2Drive](https://bench2drive.github.io/)
+  - Summary：
+    - UniDrive-WM, a unified VLM-based world model that jointly performs driving-scene understanding, trajectory planning, and trajectory-conditioned future image generation within a single architecture.
+    - The model's trajectory planner predicts a future trajectory, which conditions a VLM-based image generator to produce plausible future frames, providing supervisory signals that enhance understanding and iteratively refine trajectory generation.
+    - Experiments on Bench2Drive show improvements of 5.9% in L2 trajectory error and 9.2% in collision rate over previous methods, demonstrating the advantages of tightly integrating VLM-driven reasoning, planning, and generative world modeling.
+
+---
+
+
+- [A Vision-Language-Action Model with Visual Prompt for OFF-Road Autonomous Driving](https://arxiv.org/abs/2601.03519)
+  - Liangdong Zhang, Yiming Nie, Haoyang Li, Fanjie Kong, Baobao Zhang, Shunxin Huang, Kai Fu, Chen Min, Liang Xiao
+  - Publish Date: 2026.01.07
+  - Task: Planning
+  - Datasets: [RELLIS-3D](https://github.com/unmannedlab/RELLIS-3D)
+  - Summary：
+    - Proposes OFF-EMMA, an end-to-end multimodal framework for off-road autonomous driving, designed to overcome insufficient spatial perception and unstable reasoning in VLA models.
+    - Introduces a visual prompt block using semantic segmentation masks to enhance spatial understanding and a chain-of-thought with self-consistency (COT-SC) reasoning strategy to improve planning robustness.
+    - Demonstrates significant performance improvements on the RELLIS-3D dataset, reducing the average L2 error by 13.3% and the failure rate from 16.52% to 6.56% compared to baseline methods.
+
+---
+
+
+- [FROST-Drive: Scalable and Efficient End-to-End Driving with a Frozen Vision Encoder](https://arxiv.org/abs/2601.03460)
+  - Zeyu Dong, Yimin Zhu, Yu Wu, Yu Sun
+  - Publisher: (Inferred from authors' typical affiliations: University of California, San Diego; Shanghai AI Laboratory)
+  - Publish Date: 2026.01.06
+  - Task: End-to-End
+  - Datasets: [Waymo Open E2E Dataset](https://waymo.com/open/)
+  - Summary：
+    - FROST-Drive, a novel End-to-End (E2E) autonomous driving architecture that preserves the generalization of a pretrained Vision-Language Model (VLM) by keeping its vision encoder frozen.
+    - The model combines the frozen encoder with a transformer-based adapter and a GRU-based decoder for waypoint generation, and introduces a custom loss function to optimize for Rater Feedback Score (RFS).
+
+---
+
 
