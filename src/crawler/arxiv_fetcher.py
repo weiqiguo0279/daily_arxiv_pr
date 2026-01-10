@@ -50,8 +50,32 @@ class ArxivFetcher:
             # 构建关键词查询（在标题或摘要中搜索）
             keyword_parts = []
             for keyword in self.keywords:
-                # 在标题和摘要中搜索关键词
-                keyword_parts.append(f'(ti:"{keyword}" OR abs:"{keyword}")')
+                # 检查关键词是否包含逻辑运算符
+                if " AND " in keyword or " OR " in keyword:
+                    # 解析包含逻辑关系的关键词
+                    import re
+                    
+                    # 分割关键词并保留逻辑运算符
+                    parts = re.split(r" (AND|OR) ", keyword)
+                    processed_parts = []
+                    
+                    for i, part in enumerate(parts):
+                        if part in ["AND", "OR"]:
+                            processed_parts.append(part)  # 保留逻辑运算符
+                        else:
+                            # 去除可能的引号
+                            part = part.strip('"')
+                            part = part.strip("'")
+                            # 为每个基础关键词添加标题和摘要搜索
+                            processed_parts.append(f'(ti:"{part}" OR abs:"{part}")')
+                    
+                    # 重新组合成查询
+                    keyword_parts.append("(" + " ".join(processed_parts) + ")")
+                else:
+                    # 普通关键词，在标题和摘要中搜索
+                    keyword_parts.append(f'(ti:"{keyword}" OR abs:"{keyword}")')
+            
+            # 组合所有关键词部分（使用OR连接不同的关键词组合）
             keyword_query = "(" + " OR ".join(keyword_parts) + ")"
             
             # 组合类别和关键词

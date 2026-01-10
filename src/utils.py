@@ -124,3 +124,8 @@ def get_data_path(config: Dict[str, Any], subdir: str = 'papers') -> str:
         return 'data/summaries'
     
     return base_path
+
+# ================ GitHub 配置 ================
+def get_github_token():
+    """Get GitHub token from environment variables"""
+    return os.environ.get('GITHUB_TOKEN')

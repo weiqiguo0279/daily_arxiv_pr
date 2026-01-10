@@ -19,7 +19,7 @@ import logging
 
 from src.utils import load_config, load_env, setup_logging, load_json
 from src.notifier import EmailNotifier
-from main import main as run_daily_task
+from test import main as run_daily_task
 
 
 def scheduled_task(logger=None, notifier=None):

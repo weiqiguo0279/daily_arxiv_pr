@@ -23,6 +23,10 @@ Automatically track the latest AI research papers on arXiv each day, use LLMs fo
   - Bilingual (Chinese & English) summaries  
   - Concurrent processing for higher efficiency  
 
+- 🚀 **GitHub PR:** Summary of uploads to GitHub
+  - Supports automatic PR creation from GitHub repositories
+  - Supports daily automatic file uploads
+
 - 📊 **Trend Analysis**: In‑depth analysis of research hot topics and technological trends  
   - TF‑IDF keyword extraction  
   - LDA topic modeling  
@@ -60,16 +64,16 @@ Automatically track the latest AI research papers on arXiv each day, use LLMs fo
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/daily-arxiv.git
-cd daily-arxiv
+git clone https://github.com/weiqiguo0279/daily_arxiv_pr.git
+cd daily_arxiv_pr
 ```
 
 ### 2. Create a virtual environment
 
 ```bash
 # Using Conda (recommended)
-conda create -n daily-arxiv python=3.12 -y
-conda activate daily-arxiv
+conda create -n daily_arxiv_pr python=3.12 -y
+conda activate daily_arxiv_pr
 
 # Or using venv
 python -m venv venv
@@ -163,14 +167,20 @@ python test/test_web.py
 python test/test_scheduler.py
 ```
 
-### 7. Execute the full workflow
+### 7. Execute the PR
+```bash
+# Manual single run
+python test.py
+```
+
+### 8. Execute the full workflow
 
 ```bash
 # Manual single run
 python main.py
 ```
 
-### 8. Start the web service
+### 9. Start the web service
 
 ```bash
 # Development mode
@@ -179,7 +189,7 @@ python src/web/app.py
 # Open http://localhost:5000
 ```
 
-### 9. Launch scheduled execution
+### 10. Launch scheduled execution
 
 ```bash
 # Recommended: use the start script
@@ -264,22 +274,7 @@ Supported providers:
 - **Gemini**: Gemini models  
 - **Anthropic**: Claude  
 - **DeepSeek**: DeepSeek models  
-- **vLLM**: Locally run open‑source models (OpenAI‑compatible API)
-
-## 📝 Development Roadmap
-
-- [x] Project scaffolding ✅  
-- [x] arXiv crawling ✅  
-- [x] LLM summarization ✅  
-  - Support OpenAI, Gemini, Claude, DeepSeek, vLLM  
-- [x] Trend analysis ✅  
-  - Keyword extraction, topic modeling, word‑cloud generation  
-  - LLM‑driven deep analysis (hotspots, trends, innovations)  
-- [x] Web UI development  
-- [x] Scheduling functionality  
-- [x] Testing & optimization  
-- [ ] UI beautification  
-- [ ] Add WeChat public account integration  
+- **vLLM**: Locally run open‑source models (OpenAI‑compatible API)  
 
 ## 🧪 Testing
 

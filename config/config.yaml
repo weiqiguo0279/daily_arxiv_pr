@@ -5,18 +5,33 @@ arxiv:
   # 研究领域类别 (可以是多个)
   # 常见类别: cs.AI, cs.LG, cs.CV, cs.CL, cs.NE, stat.ML
   categories:
-    - "math.NA"  # Numerical Analysis
-    # - "cs.LG"  # Machine Learning
+    #- "math.NA"  # Numerical Analysis
+    - "cs.LG"  # Machine Learning
+    - "cs.CV"  # Computer Vision
+    - "cs.AI"  # Artificial Intelligence
+    - "cs.RO"  # Robotics
+    - "cs.SY"  # Systems and Control
   
   # 关键词过滤 (可选，为空则不过滤)
   keywords:
-    # - "large language model"
-    # - "LLM"
-    # - "transformer"
-    # - "agent"
-  
+    # - "autonomous vehicle language model"
+    # - "driving language understanding"
+    # - "vision language driving"
+    # - "multimodal driving"
+    # - "VLM driving"
+    # - "VLA autonomous vehicle"
+    # - "vision language navigation driving"
+    # - "LLM autonomous driving"
+    # - "language model driving"
+    # - "autonomous vehicle"
+    # - "autonomous vehicle navigation"
+    # - "autonomous driving"
+    - '"autonomous driving" AND VLA'
+    - '"autonomous driving" AND VLM'
+    - '"autonomous driving" AND LLM'
+
   # 每天获取的最大论文数量
-  max_results: 20
+  max_results: 10
   
   # 排序方式: submittedDate (提交日期) 或 relevance (相关性)
   sort_by: "submittedDate"
@@ -24,10 +39,20 @@ arxiv:
   # 排序顺序: descending 或 ascending
   sort_order: "descending"
 
+
+# GitHub 配置
+github:
+  repo_owner: "weiqiguo0279"
+  repo_name: "daily_arxiv_pr"
+  branch: "main"
+  enabled: true  # 是否启用PR创建功能
+  file_path: "daily_reports/"  # GitHub上的文件路径，可以是目录或完整文件路径
+  merge_file_path: "LLM4AD/VLM4AD/VLA4AD.md"  # 要合并内容的目标文件路径
+
 # LLM 配置
 llm:
   # 提供商: openai, gemini, claude, deepseek, vllm
-  provider: "vllm"
+  provider: "deepseek"
   
   # OpenAI 配置
   openai:
@@ -98,7 +123,7 @@ scheduler:
       sender: ""  # 发件人邮箱
       password: ""  # 在 .env 文件中设置 EMAIL_PASSWORD
       recipients:  # 收件人列表
-        - "your-email@example.com"
+        - ""
       on_success: true  # 成功时发送通知
       on_failure: true  # 失败时发送通知
 

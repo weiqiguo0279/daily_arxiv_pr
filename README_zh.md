@@ -22,6 +22,10 @@
   - 中英文双语总结
   - 并发处理提升效率
 
+- 🚀 **GITHUB PR**: 总结上传至GITHUB
+  - 支持 GITHUB 仓库自动创建 PR
+  - 支持每日自动上传文件
+
 - 📊 **趋势分析**: 深度分析研究热点和技术趋势
   - TF-IDF 关键词提取
   - LDA 主题建模
@@ -59,16 +63,16 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/yourusername/daily-arxiv.git
-cd daily-arxiv
+git clone https://github.com/weiqiguo0279/daily_arxiv_pr.git
+cd daily_arxiv_pr
 ```
 
 ### 2. 创建虚拟环境
 
 ```bash
 # 使用 Conda（推荐）
-conda create -n daily-arxiv python=3.12 -y
-conda activate daily-arxiv
+conda create -n daily_arxiv_pr python=3.12 -y
+conda activate daily_arxiv_pr
 
 # 或使用 venv
 python -m venv venv
@@ -161,15 +165,19 @@ python test_web.py
 # 测试调度器
 python test_scheduler.py
 ```
-
-### 7. 运行完整流程
+### 7. 运行PR功能
+```bash
+# 手动运行一次
+python test.py
+```
+### 8. 运行完整流程
 
 ```bash
 # 手动运行一次
 python main.py
 ```
 
-### 8. 启动 Web 服务
+### 9. 启动 Web 服务
 
 ```bash
 # 开发模式
@@ -178,7 +186,7 @@ python src/web/app.py
 # 访问 http://localhost:5000
 ```
 
-### 9. 启动定时调度
+### 10. 启动定时调度
 
 ```bash
 # 使用启动脚本（推荐）
@@ -265,21 +273,6 @@ daily-arxiv/
 - **Deepseek**: Deepseek
 - **vllm**: 本地运行的开源模型(OpenAI兼容API)
 
-## 📝 开发计划
-
-- [x] 项目结构搭建 ✅
-- [x] arXiv 论文爬取功能 ✅
-- [x] LLM 论文总结功能 ✅
-  - 支持 OpenAI, Gemini, Claude, DeepSeek, vLLM
-- [x] 趋势分析功能 ✅
-  - 关键词提取、主题建模、词云生成
-  - LLM 深度分析（热点、趋势、创新点）
-- [x] Web 界面开发
-- [x] 定时调度功能
-- [x] 测试和优化
-- [ ] 美化web页面
-- [ ] 添加微信公众号功能
-
 ## 🧪 测试
 
 ```bash
@@ -318,10 +311,6 @@ data/
 - [论文爬取模块指南](docs/arxiv_fetcher_guide.md)
 - [LLM 总结模块指南](docs/llm_guide.md)
 - [配置说明](docs/config_guide.md)
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request！
 
 ## 📄 许可证
 
