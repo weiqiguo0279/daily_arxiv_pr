@@ -62,6 +62,16 @@ format:
   - metrics
 ```
 
+- [Modular Autonomy with Conversational Interaction: An LLM-driven Framework for Decision Making in Autonomous Driving](https://arxiv.org/abs/2601.05806)
+  - Marvin Seegert, Korbinian Moller, Johannes Betz
+  - Publisher: Technical University of Munich
+  - Publish Date: 2026.01.09
+  - Task: Planning
+  - Summary：
+    - A framework integrating an LLM-based interaction layer with Autoware to enable natural language commands for Autonomous Driving Systems, from queries to behavior modification.
+    - The methodology is based on interaction taxonomization, a Domain Specific Language (DSL) for command translation, and a safety-preserving validation layer with a two-stage LLM architecture for transparency.
+    - The system was evaluated for timing efficiency and translation robustness, with simulation successfully validating command execution across all five defined interaction categories.
+
 - [ThinkDrive: Chain-of-Thought Guided Progressive Reinforcement Learning Fine-Tuning for Autonomous Driving](https://arxiv.org/abs/2601.04714)
   - Chang Zhao, Zheming Yang, Yunqing Hu, Qi Guo, Zijian Wang, Pengcheng Li, Wen Ji
   - Publish Date: 2026.01.08
