@@ -1,5 +1,24 @@
 # 📚 每日 arXiv 论文总结(LLM4AD/VLM4AD/VLA4AD)
 
+**日期**: 2026-01-14
+**论文数量**: 1 篇
+**LLM**: DeepSeek (deepseek-chat)
+
+---
+
+
+- [Efficient Visual Question Answering Pipeline for Autonomous Driving via Scene Region Compression](https://arxiv.org/abs/2601.07092)
+  - Yuliang Cai, Dongqiangzi Ye, Zitian Chen, Chongruo Wu
+  - Publish Date: 2026.01.11
+  - Task: VQA
+  - Summary：
+    - Proposes SRC-Pipeline, an efficient VLM framework for autonomous driving VQA that compresses early frame tokens into a small number of high-level tokens while keeping full tokens for recent frames.
+    - Achieves a 66% reduction in FLOPs while maintaining comparable performance, enabling more effective real-time operation in safety-critical driving settings.
+
+---
+
+# 📚 每日 arXiv 论文总结(LLM4AD/VLM4AD/VLA4AD)
+
 **日期**: 2026-01-11
 **论文数量**: 4 篇
 **LLM**: DeepSeek (deepseek-chat)
