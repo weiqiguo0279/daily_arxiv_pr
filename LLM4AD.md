@@ -1,5 +1,76 @@
 # 📚 每日 arXiv 论文总结(LLM4AD/VLM4AD/VLA4AD)
 
+**日期**: 2026-01-16
+**论文数量**: 2 篇
+**LLM**: DeepSeek (deepseek-chat)
+
+---
+
+
+- [SoC: Semantic Orthogonal Calibration for Test-Time Prompt Tuning](https://arxiv.org/abs/2601.08617)
+  - Leo Fillioux, Omprakash Chakraborty, Ismail Ben Ayed, Paul-Henry Cournède, Stergios Christodoulidis, Maria Vakalopoulou, Jose Dolz
+  - Publish Date: 2026.01.13
+  - Task: Perception
+  - Summary：
+    - Proposes Semantic Orthogonal Calibration (SoC), a Huber-based regularizer for test-time prompt tuning of Vision-Language Models to improve uncertainty calibration.
+    - Theoretically and empirically shows that prior fully orthogonal constraints can degrade calibration by pushing semantically related classes apart, making models overconfident.
+    - Demonstrates that SoC enforces smooth prototype separation while preserving semantic proximity, improving calibration while maintaining competitive discriminative performance.
+
+---
+
+
+- [Semantic Misalignment in Vision-Language Models under Perceptual Degradation](https://arxiv.org/abs/2601.08355)
+  - Guo Cheng
+  - Publish Date: 2026.01.13
+  - Task: Perception
+  - Datasets: [Cityscapes](https://www.cityscapes-dataset.com/)
+  - Summary：
+    - A systematic study of semantic misalignment in Vision-Language Models (VLMs) under controlled degradation of upstream visual perception, using semantic segmentation as a representative perception module.
+    - Introduces perception-realistic corruptions that cause moderate drops in segmentation metrics but lead to severe VLM failures like hallucinations, critical omissions, and inconsistent safety judgments.
+    - Proposes language-level misalignment metrics to quantify these effects, revealing a disconnect between pixel-level robustness and multimodal semantic reliability in safety-critical applications.
+
+---
+
+# 📚 每日 arXiv 论文总结(LLM4AD/VLM4AD/VLA4AD)
+
+**日期**: 2026-01-15
+**论文数量**: 2 篇
+**LLM**: DeepSeek (deepseek-chat)
+
+---
+
+
+- [SoC: Semantic Orthogonal Calibration for Test-Time Prompt Tuning](https://arxiv.org/abs/2601.08617)
+  - Leo Fillioux, Omprakash Chakraborty, Ismail Ben Ayed, Paul-Henry Cournède, Stergios Christodoulidis, Maria Vakalopoulou, Jose Dolz
+  - Publish Date: 2026.01.13
+  - Task: Perception
+  - Summary：
+    - Proposes Semantic Orthogonal Calibration (SoC), a Huber-based regularizer for test-time prompt tuning of vision-language models to improve uncertainty calibration.
+    - Theoretically and empirically shows that prior fully orthogonal constraints can make models overconfident by pushing semantically related classes apart.
+    - SoC enforces smooth prototype separation while preserving semantic proximity, improving calibration while maintaining competitive discriminative performance.
+    - Theoretically and empirically shows that prior full orthogonality constraints degrade calibration by pushing semantically related classes apart, making models overconfident.
+    - Demonstrates that SoC enforces smooth prototype separation while preserving semantic proximity, leading to improved calibration and competitive discriminative performance.
+
+---
+
+
+- [Semantic Misalignment in Vision-Language Models under Perceptual Degradation](https://arxiv.org/abs/2601.08355)
+  - Guo Cheng
+  - Publish Date: 2026.01.13
+  - Task: Perception
+  - Datasets: [Cityscapes](https://www.cityscapes-dataset.com/)
+  - Summary：
+    - Systematically studies semantic misalignment in Vision-Language Models (VLMs) under controlled degradation of upstream visual perception, using semantic segmentation as a representative module.
+    - Introduces perception-realistic corruptions that cause moderate drops in segmentation metrics but lead to severe downstream VLM failures, including hallucinations and safety-critical omissions.
+    - Proposes language-level misalignment metrics to quantify hallucination, critical omission, and safety misinterpretation, revealing a disconnect between pixel-level robustness and multimodal semantic reliability.
+    - A systematic study of semantic misalignment in Vision-Language Models (VLMs) under controlled degradation of upstream visual perception, using semantic segmentation as a representative module.
+    - Introduces perception-realistic corruptions and proposes language-level misalignment metrics to quantify hallucination, critical omission, and safety misinterpretation.
+    - Reveals a disconnect between pixel-level robustness and multimodal semantic reliability, highlighting a critical limitation for safety-critical applications like autonomous driving.
+
+---
+
+# 📚 每日 arXiv 论文总结(LLM4AD/VLM4AD/VLA4AD)
+
 **日期**: 2026-01-11
 **论文数量**: 4 篇
 **LLM**: DeepSeek (deepseek-chat)
